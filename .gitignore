@@ -1,0 +1,35 @@
+# --- Archivos pesados: NO subir a GitHub (>100 MB o innecesarios) ---
+
+# Dataset (~767 MB) -> se baja con gdown desde Drive
+SC2_Scouting/
+
+# Videos: los clips de scouting (datos de prueba, <100 MB) SÍ van al repo;
+# los pesados de partida avanzada y los zips NO (van por Drive).
+*.zip
+scout_anotado.mp4
+scout_clip.mp4
+videos_scout/StarCraft II 2026-07-13 20-56-37.mp4
+videos_scout/StarCraft II 2026-07-13 20-57-22.mp4
+videos_scout/StarCraft II 2026-07-13 21-00-06.mp4
+
+# Resultados de entrenamiento/val, EXCEPTO best.pt
+runs/
+!runs/detect/
+!runs/detect/train/
+!runs/detect/train/weights/
+!runs/detect/train/weights/best.pt
+
+# Entorno virtual y kernels
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Instalador y archivos generados
+python-*-amd64.exe
+resultado_imagen.jpg
+yolo26n.pt
+yolo26s.pt
+
+# Sistema
+Thumbs.db
+.DS_Store
